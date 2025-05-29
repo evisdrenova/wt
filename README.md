@@ -10,4 +10,5 @@ To run:
 2. `npm install` to install dependencies
 3. `npm run tauri dev` to start dev mode
 
-<img width="665" alt="image" src="https://github.com/user-attachments/assets/7337ea1f-9bcd-424b-8cd4-605585bf16c8" />
+<img width="684" alt="image" src="https://github.com/user-attachments/assets/9ad6d63e-ab0f-49f9-a598-4d78e8966b98" />
+
