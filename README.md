@@ -9,3 +9,5 @@ To run:
 1. Create sqlite db in the app folder path above using `sqlite3 wt-database.sqlite`
 2. `npm install` to install dependencies
 3. `npm run tauri dev` to start dev mode
+
+<img width="665" alt="image" src="https://github.com/user-attachments/assets/7337ea1f-9bcd-424b-8cd4-605585bf16c8" />
