@@ -50,7 +50,7 @@ export default function NoteEditor({
         value={content}
         onChange={(e) => setContent(e.target.value)}
         placeholder="Start writing your note..."
-        className="flex-1 p-4 resize-none border-none outline-none overflow-y-auto"
+        className="flex-1 p-4 resize-none border-none outline-none overflow-y-auto placeholder:text-gray-500"
         style={{
           fontFamily: "Geist, ui-sans-serif, system-ui, sans-serif",
           fontSize: "14px",
@@ -70,7 +70,11 @@ function Footer(props: FooterProps) {
   const { content, isSaving } = props;
 
   function countWords(str: string) {
-    return str.trim().split(/\s+/).length;
+    if (str.length == 0) {
+      return 0;
+    } else {
+      return str.trim().split(/\s+/).length;
+    }
   }
 
   return (
@@ -93,7 +97,9 @@ function Footer(props: FooterProps) {
       </TooltipProvider>
 
       <div className="text-xs text-gray-600">{content.length} characters</div>
-      <div className="text-xs text-gray-600">{countWords(content)} words</div>
+      <div className="text-xs text-gray-600">
+        {countWords(content)} {countWords(content) == 1 ? "word" : "words"}
+      </div>
     </div>
   );
 }
